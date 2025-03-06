@@ -1,5 +1,5 @@
 def tidyNumber(n):
-    asc = int(''.join(sorted(list(str(n)))))
-    if asc == n:
-        return True
-    return False
+#     return n == int(''.join(sorted(list(str(n)))))
+​
+      s = list(str(n))
+      return s == sorted(s)
