@@ -1,4 +1,3 @@
-​
 from preloaded import dictionary
 ​
 def make_backronym(acronym):
