@@ -1,13 +1,13 @@
-def solution(start, finish):  
-#     current_position, jumps = start, 0
-#     while current_position < finish:
-#         if finish - current_position >= 3:
-#             step = 3
-#         else:
-#             step = 1
-#         current_position += step
-#         jumps += 1
-#     return jumps
+def solution(start, finish):   
+    # jumps = 0
+    # while start < finish:
+    #     if start + 3 <= finish:
+    #         start += 3
+    #     else:
+    #         start += 1
+    #     jumps += 1
+    # return jumps
+    
     distance = finish - start
     three_shelves = distance // 3
     one_shelve = distance % 3
