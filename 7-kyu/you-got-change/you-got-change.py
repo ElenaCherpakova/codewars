@@ -1,7 +1,8 @@
 def give_change(amount): 
-    denoms = [1, 5, 10, 20, 50, 100]
-    res = [0] * len(denoms)
-    for i in range(5, -1, -1):
-        res[i] = amount // denoms[i]
-        amount %= denoms[i]
-    return tuple(res)
+    hundred, remainder = divmod(amount, 100)
+    fifty, remainder = divmod(remainder, 50)
+    twenty, remainder = divmod(remainder, 20) 
+    ten, remainder = divmod(remainder, 10)
+    five, remainder = divmod(remainder, 5)
+    one, remainder = divmod(remainder, 1)
+    return (one, five, ten, twenty, fifty, hundred)
