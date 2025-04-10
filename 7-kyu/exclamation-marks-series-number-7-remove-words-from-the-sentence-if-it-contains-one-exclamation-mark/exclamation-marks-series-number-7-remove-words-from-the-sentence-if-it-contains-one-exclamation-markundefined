@@ -1,0 +1,17 @@
+function remove (string) {
+   let res = []
+   const split_str = string.split(' ')
+   for (let str of split_str){
+      let count = 0
+      for (let char of str){
+          if (char === "!"){
+              count += 1
+          }
+      }
+     if(count !== 1){
+       res.push(str)
+     }
+   }
+  return res.join(' ')
+}
+​
