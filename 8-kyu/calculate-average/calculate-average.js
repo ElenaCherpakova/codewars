@@ -1,4 +1,3 @@
 function findAverage(array) {
-  if(array.length === 0) return 0
-  return array.reduce((acc, count)=> acc + count, 0) / array.length
+  return array.length === 0 ? 0 : array.reduce((acc, count)=> acc + count, 0) / array.length
 }
